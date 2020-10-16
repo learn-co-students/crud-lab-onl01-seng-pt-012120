@@ -8,7 +8,7 @@ class Restaurants extends Component {
 
     return(
       <ul>
-        {restaurants.map(restaurant => <Restaurant key={restaurant.id} restaurant={restaurant} deleteRestaurant={deleteRestaurant} />)}
+        {restaurants.map(restaurant => <Restaurant key={restaurant.id} restaurant={restaurant} deleteRestaurant={deleteRestaurant} /> )}
       </ul>
     );
   }

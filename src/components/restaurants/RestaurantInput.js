@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
 
 class RestaurantInput extends Component {
 
@@ -41,10 +40,10 @@ class RestaurantInput extends Component {
   }
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    addRestaurant: (text) => dispatch({type: 'ADD_RESTAURANT', text})
-  }
-}
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     addRestaurant: (text) => dispatch({type: 'ADD_RESTAURANT', text})
+//   }
+// }
 
-export default connect(null, mapDispatchToProps)(RestaurantInput);
+export default RestaurantInput;

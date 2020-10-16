@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import Reviews from './Reviews';
-import { connect } from 'react-redux';
 
 class ReviewInput extends Component {
 
@@ -39,11 +37,11 @@ class ReviewInput extends Component {
   }
 };
 
-const mapDispatchToProps = dispatch => {
-  // { type: 'ADD_REVIEW', review: { text: "Was not great", restaurantId } }
-  return {
-    addReview: (restaurantId, text) => dispatch({type: 'ADD_REVIEW', review: {restaurantId, text}})
-  }
-}
+// const mapDispatchToProps = dispatch => {
+//   // { type: 'ADD_REVIEW', review: { text: "Was not great", restaurantId } }
+//   return {
+//     addReview: (restaurantId, text) => dispatch({type: 'ADD_REVIEW', review: {restaurantId, text}})
+//   }
+// }
 
-export default connect(null, mapDispatchToProps)(ReviewInput);
+export default ReviewInput;

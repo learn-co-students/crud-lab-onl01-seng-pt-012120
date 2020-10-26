@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ReviewInput extends Component {
 
   state = {
-    text: ''
+    text: ""
   }
 
   handleOnChange = event => {
@@ -14,16 +14,16 @@ class ReviewInput extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    this.props.addReview({text: this.state.text, restaurantId: this.props.restaurantId });
+    this.props.addReview({ text: this.state.text, restaurantId: this.props.restaurantId });
     this.setState({
-      text: '',
-    });
+      text: "",
+    })
   }
-
+  
   render() {
     return (
-     <div>
-        <form onSubmit={this.handleOnSubmit} >
+      <div>
+        <form onSubmit={this.handleOnSubmit}>
           <label>Add Review</label>
           <input
             type="text"
